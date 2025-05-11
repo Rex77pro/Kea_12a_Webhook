@@ -52,7 +52,7 @@ In postman you can call:
     ````
 
 
-2. Post : baseurl /webhooks/:id
+2. Delete : baseurl /webhooks/:id
 
 3. Post : baseurl /ping
 
