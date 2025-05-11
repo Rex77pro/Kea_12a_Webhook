@@ -42,7 +42,7 @@ In postman you can call:
 
 1. Post : baseurl /webhooks/register
 
-    a. Med body:
+    a. with body:
         
     ````
     {
@@ -56,7 +56,7 @@ In postman you can call:
 
 3. Post : baseurl /ping
 
-    a. Med body :
+    a. with body :
 
     ````   
     {
