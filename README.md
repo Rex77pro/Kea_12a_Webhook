@@ -37,6 +37,13 @@ npm run dev
 
 This will open up for the base url : http://localhost:8000/
 
+You will also need to run a localTunnel to let others access your webhook. Your PORT needs to be the same as your webhook. 
+
+````powershell
+# Example:
+lt --port 8000 --subdomain rkalt
+````
+
 ## Running - Test - Postman
 In postman you can call:  
 
@@ -52,7 +59,7 @@ In postman you can call:
     ````
 
 
-2. Delete : baseurl /webhooks/:id
+2. Delete : baseurl /webhooks/{id}
 
 3. Post : baseurl /ping
 
@@ -65,4 +72,8 @@ In postman you can call:
     }
     ````
 
-
+This webhook takes four events:
+* payment.received
+* payment.processed
+* invoice.created
+* invoice.completed
